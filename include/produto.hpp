@@ -7,7 +7,8 @@
 class produto
 {
 private:
-    int _codigo; float _preco; int _qtd; std::string _data_validade; std::string _data_reposicao; 
+    int _codigo; double _preco; int _qtd; std::string _data_validade; std::string _data_reposicao; int cod_func;
+    std::string _tipo_produto;
 public:
     produto(/* args */);
     ~produto();
