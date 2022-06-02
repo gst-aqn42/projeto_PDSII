@@ -11,7 +11,7 @@ class Funcionario{
     Funcionario(std::string nome, std::string funcao);
 
   private:
-    static int codigo_do_funcionario;
+    static int _codigo_funcionario;
 };
 
 #endif
