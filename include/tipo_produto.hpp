@@ -5,14 +5,10 @@
 
 class tipo_produto{
 private:
-    std::string tipo; 
+    int codigo; std::string tipo;
 public:
     tipo_produto(/* args */);
-    ~tipo_prodto();
-;
+    ~tipo_produto();
+};
 
-tipint codigo; std::string tipo;tipo_produto(/* args */){
-}
-
-tipint codigo; std::string tipo;:~tipo_produto(){
-int codigo; std::string tipo;
+#endif
