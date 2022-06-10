@@ -1,36 +1,85 @@
-<h1 align="center"> Projeto de PDSII : Sistema de vendas de um supermercado.</h1>
-> Satus: Developing
-<h3>Grupo 6: 
-  <p>
-    <a>Gustavo Rodrigues de Aquino - 2018020476.</a>
-  </p>
-  <p>  
-    <a>Marco - </a>
-  </p>
-  <p>  
-    <a>João Pedro - </a>
-  </p>
-</h3>
+<h1>
+  <img src="./img/GitHub-Mark.png">
+</h1>
 
-<h2 allign="left">Cartões CRC:</h2>
+<h1 align="center"> Projeto de PDSII : Sistema de vendas de um supermercado.</h1>
+
+
+
+## Sobre
+<p>Este é o reositório do projeto do curso de PDSII, o sistema é referente a um <b>sistema de supermercado</b> e será implementado conforme a descrição.</p>
+
+## Quadro de navegação
+- [Sobre](##Sobre)
+- [Cartões CRC](##Cartões-CRC)
+- [User Story's](##User-Story)
+
+
+## User Story
+  <h3>Repositor</h3>
+<p>
+  <ol>
+    + Como repositor eu desejo alterar os preços dos produtos de acordo com sua condição, ou seja, quando um produto está avariado, mas ainda prórpio para consumo (lata amassada no estoque, caixa amassada...) ele recebe um valor diferente do produto em plenas condições.
+  </ol>
+  <ol>            
+    + Como repositor eu desejo cadastrar mais produtos no estoque
+  </ol>
+  <ol>
+    + Como repositor eu desejo classificar um produto como danificado ou não
+  </ol>
+  <ol>
+    + Como repositor eu desejo remover os produtos vencidos e se possível repor a prateleira com novos produtos.
+  </ol>
+</p>
+
+
+  <h3>Gerente</h3> 
+<p>
+  <ol>
+    + Como gerente eu desejo gerar o balanço do estoque, mostrando os produtos com menos de 10 unidades e quais os produtos que mais venceram em estoque.
+  </ol>
+  <ol>            
+    +  Como gerente eu desejo gerar o balanço de todos os caixas ao fim do dia para comparar as vendas com as baixas do estoque e fechamento de caixas.
+  </ol>
+  <ol>
+    + Como gerente eu também desejo contratar e demitir funcionários.
+  </ol>
+  <ol>
+    + Como gerente eu desejo calcular os salários dos funcionários
+  </ol>
+</p>
+
+
+  <h3>Caixa</h3> 
+<p>
+  <ol>
+    + Como operador de caixa eu desejo vender um produto a uma pessoa e quero que as vendas fiquem armazenadas em ordem cronológica até o fim do dia
+  </ol>
+  <ol>            
+    +  Como operador de caixa eu desejo cadastrar o novo cliente, assim tendo seu endereço para entrega e alguns dados pertinentes para futuros métodos.
+  </ol>
+  <ol>
+    + Como operador de caixa eu desejo fazer o fechamento de caixa para encerrar o expediente, assim gerando o valor da soma de todas as vendas e imprimindo o nome do cliente e valor gasto.
+  </ol>
+</p>
+
+## Cartões CRC:
 
 <h3>Classe: Produto</h3>
 <ul>
   <h3>Responsabilidade:</h3>
   <p>
       <li>
-        <a>Alterar o preço.</a>
+        Alterar o preço.
       </li>
       <li>
-        <a>Resgatar valores relevantes do objeto.</a>
+        Resgatar valores relevantes do objeto.
       </li>
   </p>
 </ul>
 <ul>
   <h3>Colaboradores</h3>
   <p>
-      <li>
-      </li>
   </p>
 </ul>
 <br>
@@ -40,13 +89,13 @@
   <h3>Responsabilidade:</h3>
   <p>
     <li>
-      <a>Adicionar produto no estoque</a>
+      Adicionar produto no estoque
     </li>
     <li>
-      <a>Remover produto do estoque</a>
+      Remover produto do estoque
     </li>
     <li>
-      <a>Imprimir Estoque</a>
+      Imprimir Estoque
     </li>
   </p>
 </ul>
@@ -54,7 +103,7 @@
   <h3>Colaboradores</h3>
   <p>
     <li>
-      <a>Produto</a>
+      Produto
     </li>
   </p>
 </ul>
@@ -65,10 +114,10 @@
   <h3>Responsabilidade:</h3>
   <p>
     <li>
-      <a>Alterar o estoque de acordo com a venda</a>
+      Alterar o estoque de acordo com a venda
     </li>
     <li>
-      <a>Gerar nota fisca</a>
+      Gerar nota fiscal
     </li>
   </p>
 </ul>
@@ -76,10 +125,10 @@
   <h3>Colaboradores</h3>
   <p>
     <li>
-      <a>Estoque</a>
+      Estoque
     </li>
     <li>
-      <a>Cliente</a>
+      Cliente
     </li>
     </p>
 </ul>
@@ -90,13 +139,13 @@
   <h3>Responsabilidade:</h3>
   <p>
     <li>
-      <a>Realizar Venda</a>
+      Realizar Venda
     </li>
     <li>
-      <a>Cadastrar Cliente </a>
+      Cadastrar Cliente 
     </li>
     <li>
-      <a>Fechamento de Caixa </a>
+      Fechamento de Caixa
     </li>
   </p>
 </ul>
@@ -104,10 +153,10 @@
   <h3>Colaboradores</h3>
   <p>
     <li>
-      <a>Venda</a>
+      Venda
     </li>
     <li>
-      <a>Cliente</a>
+      Cliente
     </li>
   </p>
 </ul>
@@ -118,16 +167,16 @@
     <h3>Responsabilidade:</h3>
     <p>
         <li>
-            <a>Remover produtos vencidos</a>
+            Remover produtos vencidos
         </li>
         <li>
-            <a>Verificar produtos danificados</a>
+            Verificar produtos danificados
         </li>
         <li>
-            <a>Alterar preço dos produtos</a>
+            Alterar preço dos produtos
         </li>
         <li>
-            <a>Relatório de produtos</a>
+            Relatório de produtos
         </li>
     </p>
 </ul>
@@ -135,7 +184,7 @@
     <h3>Colaboradores</h3>
     <p>
         <li>
-            <a>Estoque</a>
+            Estoque
         </li>
     </p>
 </ul>
@@ -146,16 +195,16 @@
     <h3>Responsabilidade:</h3>
     <p>
         <li>
-            <a>Gerar balanco de estoque</a>
+            Gerar balanco de estoque
         </li>
         <li>
-            <a>Gerar balanço de todos os caixas</a>
+            Gerar balanço de todos os caixas
         </li>
         <li>
-            <a>Contratar Funcionarios</a>
+            Contratar Funcionarios
         </li>
         <li>
-            <a>Calcular salários</a>
+            Calcular salários
         </li>
     </p>
 </ul>
@@ -163,13 +212,13 @@
     <h3>Colaboradores</h3>
     <p>
         <li>
-            <a>Caixa</a>
+            Caixa
         </li>
         <li>
-            <a>Estoque</a>
+            Estoque
         </li>
         <li>
-            <a>Repositor</a>
+            Repositor
         </li>
     </p>
 </ul>
@@ -180,70 +229,16 @@
     <h3>Responsabilidade:</h3>
     <p>
         <li>
-            <a>Cadastrar um novo cliente</a>
+            Cadastrar um novo cliente
         </li>
     </p>
 </ul>
 <ul>
     <h3>Colaboradores</h3>
     <p>
-        <li>
-        </li>
     </p>
 </ul>
 <br>
 <br>
 
 
-<h2>User Story:</h2>
-
-<li>
-  <h3>Repositor</h3> 
-</li>
-<p>
-  <ol>
-    <a>+ Como repositor eu desejo alterar os preços dos produtos de acordo com sua condição, ou seja, quando um produto está avariado, mas ainda prórpio para consumo (lata amassada no estoque, caixa amassada...) ele recebe um valor diferente do produto em plenas condições.</a>
-  </ol>
-  <ol>            
-    <a>+ Como repositor eu desejo cadastrar mais produtos no estoque</a>
-  </ol>
-  <ol>
-    <a>+ Como repositor eu desejo classificar um produto como danificado ou não</a>
-  </ol>
-  <ol>
-    <a>+ Como repositor eu desejo remover os produtos vencidos e se possível repor a prateleira com novos produtos.</a>
-  </ol>
-</p>
-
-<li>
-  <h3>Gerente</h3> 
-</li>
-<p>
-  <ol>
-    <a>+ Como gerente eu desejo gerar o balanço do estoque, mostrando os produtos com menos de 10 unidades e quais os produtos que mais venceram em estoque</a>
-  </ol>
-  <ol>            
-    <a>+  Como gerente eu desejo gerar o balanço de todos os caixas ao fim do dia para comparar as vendas com as baixas do estoque e fechamento de caixas.</a>
-  </ol>
-  <ol>
-    <a>+ Como gerente eu também desejo contratar e demitir funcionários</a>
-  </ol>
-  <ol>
-    <a>+ Como gerente eu desejo calcular os salários dos funcionários</a>
-  </ol>
-</p>
-
-<li>
-  <h3>Caixa</h3> 
-</li>
-<p>
-  <ol>
-    <a>+ Como operador de caixa eu desejo vender um produto a uma pessoa e quero que as vendas fiquem armazenadas em ordem cronológica até o fim do dia</a>
-  </ol>
-  <ol>            
-    <a>+  Como operador de caixa eu desejo cadastrar o novo cliente, assim tendo seu endereço para entrega e alguns dados pertinentes para futuros métodos.</a>
-  </ol>
-  <ol>
-    <a>+ Como operador de caixa eu desejo fazer o fechamento de caixa para encerrar o expediente, assim gerando o valor da soma de todas as vendas e imprimindo o nome do cliente e valor gasto.</a>
-  </ol>
-</p>
