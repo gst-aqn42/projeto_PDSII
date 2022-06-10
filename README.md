@@ -44,7 +44,7 @@
     + Como gerente eu também desejo contratar e demitir funcionários.
   </ol>
   <ol>
-    + Como gerente eu desejo calcular os salários dos funcionários
+    + Como gerente eu desejo calcular os salários dos funcionários.
   </ol>
 </p>
 
