@@ -52,7 +52,7 @@
   <h3>Caixa</h3> 
 <p>
   <ol>
-    + Como operador de caixa eu desejo vender um produto a uma pessoa e quero que as vendas fiquem armazenadas em ordem cronológica até o fim do dia
+    + Como operador de caixa eu desejo vender um produto a uma pessoa e quero que as vendas fiquem armazenadas em ordem cronológica até o fim do dia.
   </ol>
   <ol>            
     +  Como operador de caixa eu desejo cadastrar o novo cliente, assim tendo seu endereço para entrega e alguns dados pertinentes para futuros métodos.
