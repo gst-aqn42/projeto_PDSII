@@ -15,7 +15,7 @@
 
 <h2 allign="left">Cartões CRC:</h2>
 
-<h3>Classe: Produto</h3>
+<h4>Classe: Produto</h4>
 <br>
 
 <ul>
@@ -26,8 +26,13 @@
     <li>
         <a>Resgatar valores relevantes do objeto.</a>
     </li>
-    
-    <a>Colaboradores:</a>
+</ul>
+
+
+<ul>
+    <a>Colaboradores</a>
+    <li>
+    </li>
 </ul>
   
 
