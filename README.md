@@ -1,5 +1,16 @@
 # projeto_PDSII : Sistema de vendas de um supermercado.
 Grupo 6: 
+            <ul>
+                <li>
+                    <a>Gustavo Rodrigues de Aquino - 2018020476</a>
+                </li>
+                 <li>
+                    <a>Marco - </a>
+                </li>
+                 <li>
+                    <a>João Pedro - </a>
+                </li>
+            </ul>
 
 
 
