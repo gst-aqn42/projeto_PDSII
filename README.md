@@ -1,5 +1,5 @@
 <h1>
-  <img src="./img/GitHub-Mark.png">
+  <img align="center" src=./img/GitHub-Mark.png>
 </h1>
 
 <h1 align="center"> Projeto de PDSII : Sistema de vendas de um supermercado.</h1>
