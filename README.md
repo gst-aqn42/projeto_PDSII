@@ -1,4 +1,26 @@
 # projeto_PDSII : Sistema de vendas de um supermercado.
+<!DOCTYPE html>
+
+<html lang ='en'>
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equv="X-UACompatible" content = "IE=edge">>
+        <title>Sistema de vendas de um supermercado</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a>Cartões CRC</a>
+                </li>
+            </ul>
+        </nav>
+    <body>
+</html>
+
+
+
+
 Grupo 6: 
 
 
@@ -15,7 +37,7 @@ Responsabilidade:                                   Colaboradores:
 Classe: Estoque
 
 Responsabilidade:                                   Colaboradores:
-*Adicionar produto no estoque                       *Produtp
+*Adicionar produto no estoque                       *Produto
 *Remover produto do estoque
 *Imprimir Estoque                   
 
