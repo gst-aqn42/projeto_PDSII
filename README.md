@@ -57,54 +57,54 @@
   
 <h3>Classe: Venda</h3>
 <ul>
-    <h3>Responsabilidade:</h3>
-    <p>
-        <li>
-            <a>Alterar o estoque de acordo com a venda</a>
-        </li>
-        <li>
-            <a>Gerar nota fisca</a>
-        </li>
-    </p>
+  <h3>Responsabilidade:</h3>
+  <p>
+    <li>
+      <a>Alterar o estoque de acordo com a venda</a>
+    </li>
+    <li>
+      <a>Gerar nota fisca</a>
+    </li>
+  </p>
 </ul>
 <ul>
-    <h3>Colaboradores</h3>
-    <p>
-        <li>
-            <a>Estoque</a>
-        </li>
-         <li>
-            <a>Cliente</a>
-        </li>
+  <h3>Colaboradores</h3>
+  <p>
+    <li>
+      <a>Estoque</a>
+    </li>
+    <li>
+      <a>Cliente</a>
+    </li>
     </p>
 </ul>
 <br>
 
 <h3>Classe: Caixa</h3>
 <ul>
-    <h3>Responsabilidade:</h3>
-    <p>
-        <li>
-            <a>Realizar Venda</a>
-        </li>
-        <li>
-            <a>Cadastrar Cliente </a>
-        </li>
-        <li>
-            <a>Fechamento de Caixa </a>
-        </li>
-    </p>
+  <h3>Responsabilidade:</h3>
+  <p>
+    <li>
+      <a>Realizar Venda</a>
+    </li>
+    <li>
+      <a>Cadastrar Cliente </a>
+    </li>
+    <li>
+      <a>Fechamento de Caixa </a>
+    </li>
+  </p>
 </ul>
 <ul>
-    <h3>Colaboradores</h3>
-    <p>
-        <li>
-            <a>Venda</a>
-        </li>
-         <li>
-            <a>Cliente</a>
-        </li>
-    </p>
+  <h3>Colaboradores</h3>
+  <p>
+    <li>
+      <a>Venda</a>
+    </li>
+    <li>
+      <a>Cliente</a>
+    </li>
+  </p>
 </ul>
 <br>
 
@@ -191,20 +191,39 @@
 
 
 <h2>User Story:</h2>
- <li>
-    <h3>Repositor</h3> 
+
+<li>
+  <h3>Repositor</h3> 
 </li>
-    <p>
-        <ol>
-            <a>+ Como repositor eu desejo alterar os preços dos produtos de acordo com sua condição, ou seja, quando um produto está avariado, mas ainda prórpio para consumo (lata amassada no estoque, caixa amassada...) ele recebe um valor diferente do produto em plenas condições.</a>
-        </ol>
-        <ol>            
-            <a>+ Como repositor eu desejo cadastrar mais produtos no estoque</a>
-        </ol>
-        <ol>
-            <a>+ Como repositor eu desejo classificar um produto como danificado ou não</a>
-        </ol>
-        <ol>
-            <a>+ Como repositor eu desejo remover os produtos vencidos e se possível repor a prateleira com novos produtos.</a>
-        </ol>
-    </p>
+<p>
+  <ol>
+    <a>+ Como repositor eu desejo alterar os preços dos produtos de acordo com sua condição, ou seja, quando um produto está avariado, mas ainda prórpio para consumo (lata amassada no estoque, caixa amassada...) ele recebe um valor diferente do produto em plenas condições.</a>
+  </ol>
+  <ol>            
+    <a>+ Como repositor eu desejo cadastrar mais produtos no estoque</a>
+  </ol>
+  <ol>
+    <a>+ Como repositor eu desejo classificar um produto como danificado ou não</a>
+  </ol>
+  <ol>
+    <a>+ Como repositor eu desejo remover os produtos vencidos e se possível repor a prateleira com novos produtos.</a>
+    </ol>
+</p>
+
+<li>
+  <h3>Gerente</h3> 
+</li>
+<p>
+  <ol>
+    <a>+ Como gerente eu desejo gerar o balanço do estoque, mostrando os produtos com menos de 10 unidades e quais os produtos que mais venceram em estoque</a>
+  </ol>
+  <ol>            
+    <a>+  Como gerente eu desejo gerar o balanço de todos os caixas ao fim do dia para comparar as vendas com as baixas do estoque e fechamento de caixas.</a>
+  </ol>
+  <ol>
+    <a>+ Como gerente eu também desejo contratar e demitir funcionários</a>
+  </ol>
+  <ol>
+    <a>+ COmo gerente eu desejo calcular os salários dos funcionários</a>
+    </ol>
+</p>
