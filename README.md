@@ -22,10 +22,10 @@
     + Como repositor eu desejo alterar os preços dos produtos de acordo com sua condição, ou seja, quando um produto está avariado, mas ainda prórpio para consumo (lata amassada no estoque, caixa amassada...) ele recebe um valor diferente do produto em plenas condições.
   </ol>
   <ol>            
-    + Como repositor eu desejo cadastrar mais produtos no estoque
+    + Como repositor eu desejo cadastrar mais produtos no estoque.
   </ol>
   <ol>
-    + Como repositor eu desejo classificar um produto como danificado ou não
+    + Como repositor eu desejo classificar um produto como danificado ou não.
   </ol>
   <ol>
     + Como repositor eu desejo remover os produtos vencidos e se possível repor a prateleira com novos produtos.
