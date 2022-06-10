@@ -1,21 +1,20 @@
-<h1>
-  <img align="center" src=./img/GitHub-Mark.png>
-</h1>
+<h3 align="center">🛑🚧Este projeto está em construção🚧🛑</h3>
+<br>
 
 <h1 align="center"> Projeto de PDSII : Sistema de vendas de um supermercado.</h1>
 
 
 
-## Sobre
+## 📄Sobre 
 <p>Este é o reositório do projeto do curso de PDSII, o sistema é referente a um <b>sistema de supermercado</b> e será implementado conforme a descrição.</p>
 
-## Quadro de navegação
-- [Sobre](##Sobre)
-- [Cartões CRC](##Cartões-CRC)
-- [User Story's](##User-Story)
+## 🔍Quadro de navegação
+* [Sobre](##Sobre)
+* [Cartões CRC](##Cartões-CRC)
+* [User Story's](##User-Story)
 
 
-## User Story
+## 🧾User Story
   <h3>Repositor</h3>
 <p>
   <ol>
@@ -63,7 +62,7 @@
   </ol>
 </p>
 
-## Cartões CRC:
+## 💳Cartões CRC:
 
 <h3>Classe: Produto</h3>
 <ul>
