@@ -125,6 +125,9 @@
             <a>Verificar produtos danificados</a>
         </li>
         <li>
+            <a>Alterar preço dos produtos</a>
+        </li>
+        <li>
             <a>Relatório de produtos</a>
         </li>
     </p>
@@ -190,7 +193,24 @@
     </p>
 </ul>
 <br>
+<br>
 
 
+<h2>User Story:</h2>
+<ul>
+   
+    <li>
+        <h3>Repositor</h3> 
+    </li>
+    <p>
+        <ol>
+            <a>Como repositor eu desejo alterar os preços dos produtos de acordo com sua condição, ou seja, quando um produto está avariado, mas ainda prórpio para consumo (lata amassada no estoque, caixa amassada...) ele recebe um valor diferente do produto em plenas condições.</a>
 
-User Story:
+            <a>Como repositor eu desejo cadastrar mais produtos no estoque</a>
+
+            <a>Como repositor eu desejo classificar um produto como danificado ou não</a>
+
+            <a>Como repositor eu desejo remover os produtos vencidos e se possível repor a prateleira com novos produtos.</a>
+        </ol>
+    </p>
+<ul>
