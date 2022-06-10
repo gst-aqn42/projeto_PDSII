@@ -1,4 +1,5 @@
 <h1 align="center"> Projeto de PDSII : Sistema de vendas de um supermercado.</h1>
+> Satus: Developing
 <h3>Grupo 6: 
   <p>
     <a>Gustavo Rodrigues de Aquino - 2018020476.</a>
@@ -211,7 +212,7 @@
   </ol>
   <ol>
     <a>+ Como repositor eu desejo remover os produtos vencidos e se possível repor a prateleira com novos produtos.</a>
-    </ol>
+  </ol>
 </p>
 
 <li>
@@ -228,6 +229,21 @@
     <a>+ Como gerente eu também desejo contratar e demitir funcionários</a>
   </ol>
   <ol>
-    <a>+ COmo gerente eu desejo calcular os salários dos funcionários</a>
-    </ol>
+    <a>+ Como gerente eu desejo calcular os salários dos funcionários</a>
+  </ol>
+</p>
+
+<li>
+  <h3>Caixa</h3> 
+</li>
+<p>
+  <ol>
+    <a>+ Como operador de caixa eu desejo vender um produto a uma pessoa e quero que as vendas fiquem armazenadas em ordem cronológica até o fim do dia</a>
+  </ol>
+  <ol>            
+    <a>+  Como operador de caixa eu desejo cadastrar o novo cliente, assim tendo seu endereço para entrega e alguns dados pertinentes para futuros métodos.</a>
+  </ol>
+  <ol>
+    <a>+ Como operador de caixa eu desejo fazer o fechamento de caixa para encerrar o expediente, assim gerando o valor da soma de todas as vendas e imprimindo o nome do cliente e valor gasto.</a>
+  </ol>
 </p>
