@@ -16,7 +16,6 @@
 <h2 allign="left">Cartões CRC:</h2>
 
 <h3>Classe: Produto</h3>
-<br>
 <ul>
     <h3>Responsabilidade:</h3>
     <p>
@@ -35,9 +34,9 @@
         </li>
     </p>
 </ul>
+<br>
 
 <h3>Classe: Estoque</h3>
-<br>
 <ul>
     <h3>Responsabilidade:</h3>
     <p>
@@ -60,9 +59,9 @@
         </li>
     </p>
 </ul>
+<br>
   
 <h3>Classe: Venda</h3>
-<br>
 <ul>
     <h3>Responsabilidade:</h3>
     <p>
@@ -85,9 +84,9 @@
         </li>
     </p>
 </ul>
+<br>
 
 <h3>Classe: Caixa</h3>
-<br>
 <ul>
     <h3>Responsabilidade:</h3>
     <p>
@@ -113,9 +112,9 @@
         </li>
     </p>
 </ul>
+<br>
 
 <h3>Classe: Repositor</h3>
-<br>
 <ul>
     <h3>Responsabilidade:</h3>
     <p>
@@ -138,10 +137,9 @@
         </li>
     </p>
 </ul>
-
+<br>
 
 <h3>Classe: Gerente</h3>
-<br>
 <ul>
     <h3>Responsabilidade:</h3>
     <p>
@@ -173,9 +171,9 @@
         </li>
     </p>
 </ul>
+<br>
 
 <h3>Classe: Cliente</h3>
-<br>
 <ul>
     <h3>Responsabilidade:</h3>
     <p>
@@ -191,6 +189,7 @@
         </li>
     </p>
 </ul>
+<br>
 
 
 
