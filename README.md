@@ -1,4 +1,4 @@
-<h3 align="center">🛑🚧Este projeto está em construção🚧🛑</h3>
+<h3 align="center">🛑🚧Este projeto está em desenvolvimento🚧🛑</h3>
 <br>
 
 <h1 align="center"> Projeto de PDSII : Sistema de vendas de um supermercado.</h1>
