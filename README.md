@@ -12,9 +12,10 @@
         </li>
      </ul>
 </h2>
+<br>
+<br>
 
-
-Cartões CRC:
+<h2 allign="left">Cartões CRC:</h2>
 ----------------------------------------------
 Classe: Produto
 <br>
