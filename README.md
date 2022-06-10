@@ -12,18 +12,26 @@
         </li>
      </ul>
 </h2>
-<br>
-<br>
 
 <h2 allign="left">Cartões CRC:</h2>
-----------------------------------------------
-Classe: Produto
+
+<h3>Classe: Produto</h3>
 <br>
 
-Responsabilidade:                                   Colaboradores:
-*Alterar o preço         
-*Resgatar valores relevantes do objeto
+<ul>
+    <a>Responsabilidade:</a>
+    <li>
+        <a>Alterar o preço.</a>
+    </li>
+    <li>
+        <a>Resgatar valores relevantes do objeto.</a>
+    </li>
+    
+    <a>Colaboradores:</a>
+</ul>
+  
 
+ 
 ----------------------------------------------
 Classe: Estoque
 
