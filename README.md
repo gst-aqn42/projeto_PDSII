@@ -1,63 +1,57 @@
 <h1 align="center"> Projeto de PDSII : Sistema de vendas de um supermercado.</h1>
-<h2>Grupo 6: 
-    <ul>
-        <li>
-            <a>Gustavo Rodrigues de Aquino - 2018020476</a>
-        </li>
-        <li>
-            <a>Marco - </a>
-        </li>
-        <li>
-            <a>João Pedro - </a>
-        </li>
-     </ul>
-</h2>
+<h3>Grupo 6: 
+  <p>
+    <a>Gustavo Rodrigues de Aquino - 2018020476</a>
+    <a>Marco - </a>
+    <a>João Pedro - </a>
+  </p>
+</h3>
 
 <h2 allign="left">Cartões CRC:</h2>
 
 <h3>Classe: Produto</h3>
 <ul>
-    <h3>Responsabilidade:</h3>
-    <p>
-        <li>
-            <a>Alterar o preço.</a>
-        </li>
-        <li>
-            <a>Resgatar valores relevantes do objeto.</a>
-        </li>
-    </p>
+  <h3>Responsabilidade:</h3>
+  <p>
+      <li>
+        <a>Alterar o preço.</a>
+      </li>
+      <li>
+        <a>Resgatar valores relevantes do objeto.</a>
+      </li>
+  </p>
 </ul>
 <ul>
-    <h3>Colaboradores</h3>
-    <p>
-        <li>
-        </li>
-    </p>
+  <h3>Colaboradores</h3>
+  <p>
+      <li>
+      </li>
+  </p>
 </ul>
 <br>
 
 <h3>Classe: Estoque</h3>
 <ul>
-    <h3>Responsabilidade:</h3>
-    <p>
-        <li>
-            <a>Adicionar produto no estoque</a>
-        </li>
-        <li>
-            <a>Remover produto do estoque</a>
-        </li>
-        <li>
-            <a>Imprimir Estoque</a>
-        </li>
-    </p>
+  <h3>Responsabilidade:</h3>
+  <p>
+    <li>
+      <a>Adicionar produto no estoque</a>
+    </li>
+    <li>
+      <a>Remover produto do estoque</a>
+    </li>
+    <li>
+      <a>Imprimir Estoque</a>
+    </li>
+  </p>
 </ul>
 <ul>
-    <h3>Colaboradores</h3>
-    <p>
-        <li>
-            <a>Produto</a>
-        </li>
-    </p>
+  <h3>Colaboradores</h3>
+  <p>
+    <li>
+      <a>Produto</a>
+    </li>
+  </p>
 </ul>
 <br>
   
@@ -202,15 +196,15 @@
 </li>
     <p>
         <ol>
-            <a>Como repositor eu desejo alterar os preços dos produtos de acordo com sua condição, ou seja, quando um produto está avariado, mas ainda prórpio para consumo (lata amassada no estoque, caixa amassada...) ele recebe um valor diferente do produto em plenas condições.</a>
+            <a>+ Como repositor eu desejo alterar os preços dos produtos de acordo com sua condição, ou seja, quando um produto está avariado, mas ainda prórpio para consumo (lata amassada no estoque, caixa amassada...) ele recebe um valor diferente do produto em plenas condições.</a>
         </ol>
         <ol>            
-            <a>Como repositor eu desejo cadastrar mais produtos no estoque</a>
+            <a>+ Como repositor eu desejo cadastrar mais produtos no estoque</a>
         </ol>
         <ol>
-            <a>Como repositor eu desejo classificar um produto como danificado ou não</a>
+            <a>+ Como repositor eu desejo classificar um produto como danificado ou não</a>
         </ol>
         <ol>
-            <a>Como repositor eu desejo remover os produtos vencidos e se possível repor a prateleira com novos produtos.</a>
+            <a>+ Como repositor eu desejo remover os produtos vencidos e se possível repor a prateleira com novos produtos.</a>
         </ol>
     </p>
