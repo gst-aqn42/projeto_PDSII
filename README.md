@@ -1,17 +1,17 @@
-# projeto_PDSII : Sistema de vendas de um supermercado.
-Grupo 6: 
-            <ul>
-                <li>
-                    <a>Gustavo Rodrigues de Aquino - 2018020476</a>
-                </li>
-                 <li>
-                    <a>Marco - </a>
-                </li>
-                 <li>
-                    <a>João Pedro - </a>
-                </li>
-            </ul>
-
+<h1 align="center"> Projeto de PDSII : Sistema de vendas de um supermercado.</h1>
+<h2>Grupo 6: 
+    <ul>
+        <li>
+            <a>Gustavo Rodrigues de Aquino - 2018020476</a>
+        </li>
+        <li>
+            <a>Marco - </a>
+        </li>
+        <li>
+            <a>João Pedro - </a>
+        </li>
+     </ul>
+</h2>
 
 
 Cartões CRC:
