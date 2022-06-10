@@ -10,8 +10,9 @@
 
 ## 🔍Quadro de navegação
 * [Sobre](##Sobre)
-* [Cartões CRC](##Cartões-CRC)
 * [User Story's](##User-Story)
+* [Cartões CRC](##Cartões-CRC)
+
 
 
 ## 🧾User Story
@@ -102,7 +103,7 @@
   <h3>Colaboradores</h3>
   <p>
     <li>
-      Produto
+    Produto
     </li>
   </p>
 </ul>
@@ -113,10 +114,10 @@
   <h3>Responsabilidade:</h3>
   <p>
     <li>
-      Alterar o estoque de acordo com a venda
+    Alterar o estoque de acordo com a venda
     </li>
     <li>
-      Gerar nota fiscal
+    Gerar nota fiscal
     </li>
   </p>
 </ul>
@@ -124,10 +125,10 @@
   <h3>Colaboradores</h3>
   <p>
     <li>
-      Estoque
+    Estoque
     </li>
     <li>
-      Cliente
+    Cliente
     </li>
     </p>
 </ul>
@@ -166,16 +167,16 @@
     <h3>Responsabilidade:</h3>
     <p>
         <li>
-            Remover produtos vencidos
+          Remover produtos vencidos
         </li>
         <li>
-            Verificar produtos danificados
+          Verificar produtos danificados
         </li>
         <li>
-            Alterar preço dos produtos
+          Alterar preço dos produtos
         </li>
         <li>
-            Relatório de produtos
+          Relatório de produtos
         </li>
     </p>
 </ul>
@@ -183,7 +184,7 @@
     <h3>Colaboradores</h3>
     <p>
         <li>
-            Estoque
+          Estoque
         </li>
     </p>
 </ul>
@@ -194,16 +195,16 @@
     <h3>Responsabilidade:</h3>
     <p>
         <li>
-            Gerar balanco de estoque
+          Gerar balanco de estoque
         </li>
         <li>
-            Gerar balanço de todos os caixas
+          Gerar balanço de todos os caixas
         </li>
         <li>
-            Contratar Funcionarios
+          Contratar Funcionarios
         </li>
         <li>
-            Calcular salários
+          Calcular salários
         </li>
     </p>
 </ul>
@@ -228,7 +229,7 @@
     <h3>Responsabilidade:</h3>
     <p>
         <li>
-            Cadastrar um novo cliente
+          Cadastrar um novo cliente
         </li>
     </p>
 </ul>
