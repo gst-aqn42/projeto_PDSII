@@ -19,13 +19,15 @@
 <br>
 
 <ul>
-    <a>Responsabilidade:</a>
-    <li>
-        <a>Alterar o preço.</a>
-    </li>
-    <li>
-        <a>Resgatar valores relevantes do objeto.</a>
-    </li>
+    <h3>Responsabilidade:</h3>
+    <p>
+        <li>
+            <a>Alterar o preço.</a>
+        </li>
+        <li>
+            <a>Resgatar valores relevantes do objeto.</a>
+        </li>
+    </p>
 </ul>
 
 
