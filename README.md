@@ -17,7 +17,6 @@
 
 <h3>Classe: Produto</h3>
 <br>
-
 <ul>
     <h3>Responsabilidade:</h3>
     <p>
@@ -29,64 +28,170 @@
         </li>
     </p>
 </ul>
-
-
 <ul>
-    <a>Colaboradores</a>
-    <li>
-    </li>
+    <h3>Colaboradores</h3>
+    <p>
+        <li>
+        </li>
+    </p>
+</ul>
+
+<h3>Classe: Estoque</h3>
+<br>
+<ul>
+    <h3>Responsabilidade:</h3>
+    <p>
+        <li>
+            <a>Adicionar produto no estoque</a>
+        </li>
+        <li>
+            <a>Remover produto do estoque</a>
+        </li>
+        <li>
+            <a>Imprimir Estoque</a>
+        </li>
+    </p>
+</ul>
+<ul>
+    <h3>Colaboradores</h3>
+    <p>
+        <li>
+            <a>Produto</a>
+        </li>
+    </p>
 </ul>
   
+<h3>Classe: Venda</h3>
+<br>
+<ul>
+    <h3>Responsabilidade:</h3>
+    <p>
+        <li>
+            <a>Alterar o estoque de acordo com a venda</a>
+        </li>
+        <li>
+            <a>Gerar nota fisca</a>
+        </li>
+    </p>
+</ul>
+<ul>
+    <h3>Colaboradores</h3>
+    <p>
+        <li>
+            <a>Estoque</a>
+        </li>
+         <li>
+            <a>Cliente</a>
+        </li>
+    </p>
+</ul>
 
- 
-----------------------------------------------
-Classe: Estoque
+<h3>Classe: Caixa</h3>
+<br>
+<ul>
+    <h3>Responsabilidade:</h3>
+    <p>
+        <li>
+            <a>Realizar Venda</a>
+        </li>
+        <li>
+            <a>Cadastrar Cliente </a>
+        </li>
+        <li>
+            <a>Fechamento de Caixa </a>
+        </li>
+    </p>
+</ul>
+<ul>
+    <h3>Colaboradores</h3>
+    <p>
+        <li>
+            <a>Venda</a>
+        </li>
+         <li>
+            <a>Cliente</a>
+        </li>
+    </p>
+</ul>
 
-Responsabilidade:                                   Colaboradores:
-*Adicionar produto no estoque                       *Produto
-*Remover produto do estoque
-*Imprimir Estoque                   
+<h3>Classe: Repositor</h3>
+<br>
+<ul>
+    <h3>Responsabilidade:</h3>
+    <p>
+        <li>
+            <a>Remover produtos vencidos</a>
+        </li>
+        <li>
+            <a>Verificar produtos danificados</a>
+        </li>
+        <li>
+            <a>Relatório de produtos</a>
+        </li>
+    </p>
+</ul>
+<ul>
+    <h3>Colaboradores</h3>
+    <p>
+        <li>
+            <a>Estoque</a>
+        </li>
+    </p>
+</ul>
 
-----------------------------------------------
-Classe: Venda
 
-Responsabilidade:                                   Colaboradores:
-*Alterar o estoque de acordo com a venda            *Estoque
-*Gerar nota fiscal                                  *Cliente
+<h3>Classe: Gerente</h3>
+<br>
+<ul>
+    <h3>Responsabilidade:</h3>
+    <p>
+        <li>
+            <a>Gerar balanco de estoque</a>
+        </li>
+        <li>
+            <a>Gerar balanço de todos os caixas</a>
+        </li>
+        <li>
+            <a>Contratar Funcionarios</a>
+        </li>
+        <li>
+            <a>Calcular salários</a>
+        </li>
+    </p>
+</ul>
+<ul>
+    <h3>Colaboradores</h3>
+    <p>
+        <li>
+            <a>Caixa</a>
+        </li>
+        <li>
+            <a>Estoque</a>
+        </li>
+        <li>
+            <a>Repositor</a>
+        </li>
+    </p>
+</ul>
 
-----------------------------------------------
-Classe: Caixa
+<h3>Classe: Cliente</h3>
+<br>
+<ul>
+    <h3>Responsabilidade:</h3>
+    <p>
+        <li>
+            <a>Cadastrar um novo cliente</a>
+        </li>
+    </p>
+</ul>
+<ul>
+    <h3>Colaboradores</h3>
+    <p>
+        <li>
+        </li>
+    </p>
+</ul>
 
-Responsabilidade:                               Colaboradores:
-*Realizar Venda                                 *Venda
-*Cadastrar Cliente                              *Cliente
-*Fechamento de Caixa                            
-
-----------------------------------------------
-Classe: Gerente
-
-Responsabilidade:                               Colaboradores:
-*Gerar balanco de estoque                       *Caixa
-*Calcular salários                              *Estoque
-*Fechamento de Caixa                            *Repositor
-*Contratar Funcionarios                         
-
-----------------------------------------------
-Classe: Repositor
-
-Responsabilidade:                               Colaboradores:
-*Remover produtos vencidos                       *Estoque
-*Verificar produtos danificados                  
-*Relatório de produtos                           
-*Contratar Funcionarios                         
-
-----------------------------------------------
-Classe: Cliente
-
-Responsabilidade:                               Colaboradores:
-*Registrar um novo cliente                    
-
-----------------------------------------------
 
 
 User Story:
