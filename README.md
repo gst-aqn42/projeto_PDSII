@@ -6,7 +6,7 @@
 
 
 ## 📄Sobre 
-<p>Este é o reositório do projeto do curso de PDSII, o sistema é referente a um <b>sistema de supermercado</b> e será implementado conforme a descrição.</p>
+<p>Este é o repositório do projeto do curso de PDSII, o projeto é referente a um <b>sistema de supermercado</b> e será implementado conforme a descrição.</p>
 
 ## 🔍Quadro de navegação
 * [Sobre](##Sobre)
