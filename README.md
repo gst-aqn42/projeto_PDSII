@@ -1,8 +1,12 @@
 <h1 align="center"> Projeto de PDSII : Sistema de vendas de um supermercado.</h1>
 <h3>Grupo 6: 
   <p>
-    <a>Gustavo Rodrigues de Aquino - 2018020476</a>
+    <a>Gustavo Rodrigues de Aquino - 2018020476.</a>
+  </p>
+  <p>  
     <a>Marco - </a>
+  </p>
+  <p>  
     <a>João Pedro - </a>
   </p>
 </h3>
