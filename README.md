@@ -15,7 +15,7 @@
 
 <h2 allign="left">Cartões CRC:</h2>
 
-<h4>Classe: Produto</h4>
+<h3>Classe: Produto</h3>
 <br>
 
 <ul>
