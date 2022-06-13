@@ -14,14 +14,6 @@ void Produto::reset_preço(double novo_preco){
   _preco = novo_preco;
 }
 
-void Produto::insert_qtd(int nova_qtd){
-  _qtd += nova_qtd;
-}
-
-std::string Produto::get_data_reposicao(){
-  return _data_reposicao;
-}
-
 std::string Produto::get_data_validade(){
   return _data_validade;
 }
@@ -31,5 +23,5 @@ double Produto::get_preco(){
 }
 
 void Produto::print_dados(){
-  std::cout << _cod_prod << _nome_produto << _preco << this->_data_validade << std::endl;
+  std::cout << _cod_prod << " " <<_nome_produto << " " << _preco << " " << this->_data_validade << std::endl;
 }

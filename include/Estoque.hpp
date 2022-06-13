@@ -13,6 +13,7 @@ private:
 public:
     Estoque();
     void adicionar_estoque(std::string nome_produto, Produto &produto);
+    void retirar_do_estoque(std::string nome);
     
 
 };
