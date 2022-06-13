@@ -8,8 +8,14 @@
 ## 📄Sobre 
 <p>Este é o repositório do projeto do curso de PDSII, o projeto é referente a um <b>sistema de supermercado</b> e será implementado conforme a descrição.</p>
 
+### Breve Descrição
+<p>Com o objetivo de ter mais controle de sua mercearia o Doc decidiu comprar um sistema de gerenciamento que funcione pelo computador, 
+</p>
+
+
 ## 🔍Quadro de navegação
 * [Sobre](##Sobre)
+  * [Breve Descrição](###Breve-Descrição)
 * [User Story's](##User-Story)
 * [Cartões CRC](##Cartões-CRC)
 

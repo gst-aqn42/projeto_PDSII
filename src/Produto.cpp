@@ -1,10 +1,10 @@
 #include "Produto.hpp"
 
 int Produto::cod_prod = 1;
-Produto::Produto(double preco, int qtd, std::string data_validade, std::string data_reposicao, std::string tipo_produto, std::string nome_produto){
-  _preco = preco; _qtd = qtd;
-  _data_validade = data_validade; _data_reposicao = data_reposicao;
-  _tipo_produto = tipo_produto; _nome_produto = nome_produto;
+Produto::Produto(double preco, std::string lote, std::string data_validade, std::string nome_produto){
+  _preco = preco;
+  _data_validade = data_validade; _lote = lote;
+  _nome_produto = nome_produto;
 
   _cod_prod = cod_prod; 
   cod_prod++;
