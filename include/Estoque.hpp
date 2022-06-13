@@ -14,9 +14,9 @@ public:
     Estoque();
     void adicionar_estoque(std::string nome_produto, Produto &produto);
     void retirar_do_estoque(std::string lote);
-    void verificar_vencidos(std::string data_vencimento);
+    int verificar_vencidos(std::string data_vencimento);
+
     
 
 };
-
 #endif
