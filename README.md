@@ -1,23 +1,35 @@
 <h3 align="center">🛑🚧Este projeto está em desenvolvimento🚧🛑</h3>
 <br>
 
-<h1 align="center"> Projeto de PDSII : Sistema de vendas de um supermercado.</h1>
+<h1 align="center"> Projeto de PDSII: Sistema de vendas de um supermercado.</h1>
 
 
+## 🔍Quadro de navegação
+
+* [Sobre](##Sobre)
+  * [Breve Descrição](###Breve-Descrição)
+* [User Story's](##User-Story)
+* [Cartões CRC](##Cartões-CRC)
+
+<br>
+<br>
 
 ## 📄Sobre 
 <p>Este é o repositório do projeto do curso de PDSII, o projeto é referente a um <b>sistema de supermercado</b> e será implementado conforme a descrição.</p>
 
 ### Breve Descrição
-<p>Com o objetivo de ter mais controle de sua mercearia o Doc decidiu comprar um sistema de gerenciamento que funcione pelo computador, 
+<p>Com o objetivo de ter mais controle de sua mercearia o Doc seguiu a dica da Wanessa e decidiu comprar um sistema de gerenciamento que funcione pelo computador, Drew será seu novo gerente já que agora o Chris aprendeu a boxear com o professor Thrumann e irá desafiar um jovem de Bel-Air. Entretanto, Chris ainda pretende continuar trabalhando no mercadinho da esquina aos fins de semana, pois tem que pagar a inscrição dos torneios de boxe e o ginásio onde treina (na maioria das vezes como sparring). O quadro de funcionários ainda sofreu uma pequena modificação, pois Monk (o sobrinho do Doc que esteve no Vietnã), Golpe Baixo, Malvo e Perigo ficaram ricos após um fim de semana em Las Vegas. A nova funcionária é a Tonya, que após sua passagem meteórica pelo salão de beleza da Wanessa conseguiu um novo emprego no mercadinho a pedido de Julius. Drew tem alguma experiência com computadores, ele recebeu aula com a Peaches no centro comunitário de Bed-Stuy antes que os computadores fossem roubados, mas o Doc e Stacy também querem ter acesso as informações e não possuem grandes habilidades com computadores. Assim, foi pedido que o sistema fosse o mais simples possível. Inicialmente modelado de acordo com a <b>figura 1</b>, sendo que qualquer alteração deverá ser documentada afim de ajudar na navegação e acessos.
+</p>
+
+### Quadro de funcionários:
+<p>
+Drew: Gerente <br>
+Chris: Caixa <br>
+Doc/Stacey: Gerente <br>
+Tonya: Repositora <br>
 </p>
 
 
-## 🔍Quadro de navegação
-* [Sobre](##Sobre)
-  * [Breve Descrição](###Breve-Descrição)
-* [User Story's](##User-Story)
-* [Cartões CRC](##Cartões-CRC)
 
 
 
@@ -69,6 +81,8 @@
   </ol>
 </p>
 
+<br>
+
 ## 💳Cartões CRC:
 
 <h3>Classe: Produto</h3>
@@ -84,7 +98,7 @@
   </p>
 </ul>
 <ul>
-  <h3>Colaboradores</h3>
+  <h3>Colaboradores:</h3>
   <p>
   </p>
 </ul>
@@ -106,7 +120,7 @@
   </p>
 </ul>
 <ul>
-  <h3>Colaboradores</h3>
+  <h3>Colaboradores:</h3>
   <p>
     <li>
     Produto
@@ -128,7 +142,7 @@
   </p>
 </ul>
 <ul>
-  <h3>Colaboradores</h3>
+  <h3>Colaboradores:</h3>
   <p>
     <li>
     Estoque
@@ -156,7 +170,7 @@
   </p>
 </ul>
 <ul>
-  <h3>Colaboradores</h3>
+  <h3>Colaboradores:</h3>
   <p>
     <li>
       Venda
@@ -187,7 +201,7 @@
     </p>
 </ul>
 <ul>
-    <h3>Colaboradores</h3>
+    <h3>Colaboradores:</h3>
     <p>
         <li>
           Estoque
@@ -215,7 +229,7 @@
     </p>
 </ul>
 <ul>
-    <h3>Colaboradores</h3>
+    <h3>Colaboradores:</h3>
     <p>
         <li>
             Caixa
@@ -240,7 +254,7 @@
     </p>
 </ul>
 <ul>
-    <h3>Colaboradores</h3>
+    <h3>Colaboradores:</h3>
     <p>
     </p>
 </ul>
