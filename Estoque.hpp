@@ -8,15 +8,13 @@
 
 class Estoque{
 private:
-    std::map<int, Produto> estoque;
+  std::map<int, Produto> _estoque;
 
 public:
-    Estoque();
-    void adicionar_estoque(int cod_prod , Produto &produto);
-    void retirar_do_estoque(std::string lote);
-    std::string verificar_vencidos(std::string data_vencimento); //Recebe o lote dos produtos vencidos
-
-    
-
+  Estoque();
+  void adicionar_estoque(int cod_prod, Produto &produto);
+  void remover_produto_do_estoque(std::string lote);
+  std::string verificar_vencidos(std::string data_vencimento); //Recebe o lote dos produtos vencidos
+  void reduzir_estoque(int cod_prod, int qtd);
 };
 #endif
