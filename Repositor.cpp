@@ -1,5 +1,5 @@
-#include "repositor.hpp"
+#include "Repositor.hpp"
 
-Repositor::Repositor(/* args */){}
+Repositor::Repositor(std::string nome, std::string funcao){}
 
 Repositor::~Repositor(){}
