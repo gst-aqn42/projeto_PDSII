@@ -17,7 +17,7 @@ class Produto{
     int _cod_prod; double _preco_un;  dadosLote _dados_prod;
     descricao _desc_prod; 
     
-    static int cod_prod;
+    static int codigo_do_produto;
       
   public:
     Produto(descricao desc_prod, double preco_un, dadosLote dados_prod);
@@ -25,9 +25,10 @@ class Produto{
     std::string get_validade() const;
     std::string get_lote() const;
     int get_qtd() const;
-    int adc_prod(int qtd);
-    int remover_prod(int qtd);
+    void adc_prod(int qtd);
+    void remover_prod(int qtd);
     double get_preco() const;
-    void print_dados() const;  
+    void print_dados() const;
+    int get_cod_prod() const;
 };
 #endif

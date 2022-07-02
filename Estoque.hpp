@@ -12,9 +12,10 @@ private:
 
 public:
   Estoque();
-  void adicionar_estoque(int cod_prod, Produto &produto);
+  void adicionar_estoque(Produto &produto);
   void remover_produto_do_estoque(std::string lote);
   std::string verificar_vencidos(std::string data_vencimento); //Recebe o lote dos produtos vencidos
   void reduzir_estoque(int cod_prod, int qtd);
+  void imprimir_estoque();
 };
 #endif
