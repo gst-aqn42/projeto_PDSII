@@ -17,5 +17,6 @@ public:
   std::string verificar_vencidos(std::string data_vencimento); //Recebe o lote dos produtos vencidos
   void reduzir_estoque(int cod_prod, int qtd);
   void imprimir_estoque();
+  void alterar_preco(int cod_prod, double novo_preco);
 };
 #endif

@@ -21,7 +21,7 @@ class Produto{
       
   public:
     Produto(descricao desc_prod, double preco_un, dadosLote dados_prod);
-    void reset_preço(double novo_preco);
+    void reset_preco(double novo_preco);
     std::string get_validade() const;
     std::string get_lote() const;
     int get_qtd() const;

@@ -10,7 +10,7 @@ Produto::Produto(descricao desc_prod,double preco_un, dadosLote dados_prod){
   codigo_do_produto++;
 }
 
-void Produto::reset_preço(double novo_preco){
+void Produto::reset_preco(double novo_preco){
   _preco_un = novo_preco;
 }
 

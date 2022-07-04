@@ -50,3 +50,13 @@ void Estoque::imprimir_estoque(){
     aux++;
   }
 }
+
+void Estoque::alterar_preco(int cod_prod, double novo_preco){
+  std::map<int, Produto>::iterator aux = _estoque.find(cod_prod);
+  if ((*aux).second.get_cod_prod() == cod_prod){
+    (*aux).second.reset_preco(novo_preco);
+  }else{
+    std::cout << "Produto não encontrado." << std::endl;
+  }
+  
+}
