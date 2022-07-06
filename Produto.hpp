@@ -20,6 +20,7 @@ class Produto{
     static int codigo_do_produto;
       
   public:
+    Produto();
     Produto(descricao desc_prod, double preco_un, dadosLote dados_prod);
     void reset_preco(double novo_preco);
     std::string get_validade() const;

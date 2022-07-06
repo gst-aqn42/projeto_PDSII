@@ -39,7 +39,7 @@ double Produto::get_preco() const{
 }
 
 void Produto::print_dados() const{
-  std::cout << _cod_prod << " " <<_desc_prod._nome << " " <<_desc_prod._marca << " " << _desc_prod._volume << " " << _preco_un << " ";
+  std::cout << _cod_prod << " " <<_desc_prod._nome << " " <<_desc_prod._marca << " " << _desc_prod._volume << " " << _preco_un << " " << std::endl;
 }
 
 int Produto::get_cod_prod() const{
