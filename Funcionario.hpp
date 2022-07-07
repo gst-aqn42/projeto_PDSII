@@ -15,6 +15,7 @@ class Funcionario{
     std::string get_funcao();
     std::string get_nome();
     int get_cod_func();
+    double calcular_salario();
 };
 
 #endif
