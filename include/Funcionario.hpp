@@ -5,17 +5,13 @@
 
 
 class Funcionario{
-  private:
+  protected:
     int _cod_func; std::string _nome; std::string _funcao; double _salario; 
     double comissao;
     static int _codigo_funcionario;
   public:
-    Funcionario(std::string nome, std::string funcao);
-    Funcionario();
-    std::string get_funcao();
-    std::string get_nome();
-    int get_cod_func();
-    double calcular_salario();
+    virtual void cadastrar_funcionario(std::string nome, std::string funcao);
+    virtual double calcular_salario(double salario_base) = 0;
 };
 
 #endif

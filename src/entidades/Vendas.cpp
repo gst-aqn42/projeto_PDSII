@@ -1,12 +1,15 @@
-#include "Vendas.hpp"
+#include "/home/ozymandias/C++/projeto_PDSII/include/Vendas.hpp"
 #include <ctime>
 
+int Vendas::_codigo_vendas = 1;
+double Vendas::dinheiroEmCaixa = 0;
 
-int Vendas::codigo_vendas = 1;
-void Vendas::nova_venda(Estoque& estoquePrincipal, std::list<listaDeCompra> &compra, Cliente cliente){ 
-  std::list<listaDeCompra>::iterator it = compra.begin();
+void Vendas::nova_venda(Estoque &estoquePrincipal, Cliente &primeiroDaFila){ 
+  system("clear");
+  std::list<listaDeCompra>* compra =  (primeiroDaFila.lista_compras());
+  std::list<listaDeCompra>::iterator it = compra->begin();
   double valorDaCompra = 0;
-  while (it != compra.end()){
+  while (it != compra->end()){
     estoquePrincipal.reduzir_estoque(it->daLista.get_cod_prod(), it->qtd);
     valorDaCompra += it->daLista.get_preco();
     it++;
@@ -20,39 +23,48 @@ void Vendas::nova_venda(Estoque& estoquePrincipal, std::list<listaDeCompra> &com
   cobranca(valorDaCompra, dinheiroEspecie);
   dinheiroEmCaixa += valorDaCompra;
 
-  std::pair<int, std::list<listaDeCompra>> aux(codigo_vendas, compra);
+  std::pair<int, Cliente> aux(_codigo_vendas, primeiroDaFila);
   _vendasCaixa.insert(aux);
-  codigo_vendas++;
+  int codigoDaVenda = _codigo_vendas;
+  _codigo_vendas++;
 
   std::cout << std::endl;
   std::cout << std::endl;
-  imprimir_nota_fiscal(cliente);
+  
+  imprimir_nota_fiscal(codigoDaVenda);
 }
 
 double Vendas::cobranca(double valorDaCompra, bool dinheiroEspecie){
   if (dinheiroEspecie){
-    double valorRecebido;
+    double valorRecebido = 0;
+    double adicional = 0;
+    std::cout << "Digite o valor recebido: ";
     std::cin >> valorRecebido;
     double troco = valorRecebido - valorDaCompra;
     if (0 > troco){
       std::cout << "O dinheiro não é seficiente, faltam: " << -troco << "R$." << std::endl;
+      std::cout << "Digite a quantia adicional: ";
+      std::cin >> adicional; 
+      valorRecebido += adicional;
+      valor_menor( valorDaCompra, valorRecebido);
     }else{
       if (troco > 0){
         std::cout << "O troco é de: " << troco << " R$." << std::endl;
+        dinheiroEmCaixa -=troco;
       }else{
         std::cout << "A quantia passada está correta." << std::endl;
       }
     }
   }else{
-    bool transacaoAprovada = true; 
+    bool transacaoAprovada = true; //A transação sempre será aprovada, pois as regras de validação de um cartão não entram no escopo destre trabalho
     std::cout << "Validação do cartão de crédito." << std::endl; //lançar uma exception para o cartão : retorno -> bool transaçãoAprovada.
     if (transacaoAprovada){
-      std::cout << "Retire o cartão" << std::endl;
+      std::cout << "Transação aprovada, retire o cartão" << std::endl;
     } 
   }
 }
 
-void Vendas::imprimir_nota_fiscal(Cliente cliente){
+void Vendas::imprimir_nota_fiscal(int codigoVenda){
 int numProdutos = 1;
 
 std::cout << "Supermercado Harrys & Deveaux" << std::endl;
@@ -93,5 +105,24 @@ void Vendas::fechamento_de_caixa(){
     }else{
       std::cout << "O valor em caixa está: " << diferenca << " R$ a mais do que deveria." << std::endl;
     } 
+  }
+}
+
+void Vendas::valor_menor(double valorDaCompra, double valorRecebido){
+  double adicional = 0;
+  double troco = valorRecebido - valorDaCompra;
+  if (0 > troco){
+    std::cout << "O dinheiro não é seficiente, faltam: " << -troco << "R$." << std::endl;
+    std::cout << "Digite a quantia adicional: ";
+    std::cin >> adicional; 
+    valorRecebido += adicional;
+    valor_menor(valorDaCompra, valorRecebido);
+  }else{
+    if (troco > 0){
+      std::cout << "O troco é de: " << troco << " R$." << std::endl;
+      dinheiroEmCaixa -=troco;
+    }else{
+      std::cout << "A quantia passada está correta." << std::endl;
+    }
   }
 }

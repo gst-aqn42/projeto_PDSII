@@ -7,7 +7,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/gst-aqn42/projeto_PDSII?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/gst-aqn42/projeto_PDSII?style=for-the-badge)
 
-<img src="exemplo-image.png" alt="exemplo imagem">
+<img src="https://i.imgur.com/oGVRgkP.png" alt="logo">
 
 > Este é o repositório do projeto do curso de PDSII, o projeto é referente a um sistema de supermercado e será implementado conforme a descrição.
 
@@ -110,7 +110,6 @@ Responsabilidade:
 - Remover produtos vencidos
 - Verificar produtos danificados
 - Alterar preço dos produtos
-- Relatório de produtos
 
 Colaboradores:
 - Estoque
@@ -122,7 +121,8 @@ Responsabilidade:
 - Gerar balanço de todos os caixas
 - Contratar Funcionarios
 - Calcular salários
-- 
+- Relatório de produtos 
+
 Colaboradores:
 - Caixa
 - Estoque
@@ -137,6 +137,7 @@ Responsabilidade:
 
 ## Esquemático do sistema
 <img src="https://i.imgur.com/fH65Qpc_d.jpg?maxwidth=520&shape=thumb&fidelity=high" alt="esquematico_sistema">
+
  imagem produzida pelo grupo usando o brModelo.
 <br>
 <br>

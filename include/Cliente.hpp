@@ -12,8 +12,9 @@ class Cliente{
 private:
   std::list<listaDeCompra> _compra; std::string _CPF;
 public:
-  Cliente();
-  Cliente(std::string CPF);
+  void cadastrar_novo_cliente(std::string CPF);
   void adicionar_produto_na_lista(Produto& adc, int qtd); //std::list<listaDeCompra> &compra
+  std::string get_CPF();
+  std::list<listaDeCompra>* lista_compras();
 };
 #endif

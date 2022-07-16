@@ -19,3 +19,7 @@ public:
   void alterar_preco(int cod_prod, double novo_preco);
 };
 #endif
+
+class ExceptionProdutoNaoEncontrado{};
+class ExceptionProdutoRepetido{};
+class ExceptionSemVencidos{};

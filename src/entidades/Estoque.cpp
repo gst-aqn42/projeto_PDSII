@@ -1,4 +1,4 @@
-#include "Estoque.hpp"
+#include "/home/ozymandias/C++/projeto_PDSII/include/Estoque.hpp"
 #include <vector>
 //Classe Estoque funcional e sem bugs encontrados para os testes executados.
 void Estoque::adicionar_estoque(Produto &produto){
@@ -9,7 +9,7 @@ void Estoque::adicionar_estoque(Produto &produto){
       if (it->second.get_lote() == produto.get_lote()){
         it->second.adc_prod(produto.get_qtd());
         repetido = true;
-        break;
+        throw ExceptionProdutoRepetido{};
       }
       it++;
     }
@@ -38,7 +38,7 @@ void Estoque::remover_produto_do_estoque(std::string lote){ //Remove TODOS os pr
   if (removido){
     std::cout << "Produtos do lote: " << lote << " removido do estoque." << std::endl;
   }else{
-    std::cout << "Produtos do lote: " << lote << " não encontrado" << std::endl;
+    throw ExceptionProdutoNaoEncontrado{};
   }
 }
 
@@ -64,7 +64,7 @@ void Estoque::verificar_vencidos(std::string data_atual){ //Verifica se há prod
       it++;
     }
   }else{
-    std::cout << "Não existem produtos vencidos." << std::endl;
+    throw ExceptionSemVencidos{};
   }
 }
 
@@ -97,6 +97,6 @@ void Estoque::alterar_preco(int cod_prod, double novo_preco){
   if ((*aux).second.get_cod_prod() == cod_prod){
     (*aux).second.reset_preco(novo_preco);
   }else{
-    std::cout << "Produto não encontrado." << std::endl;
+    throw ExceptionProdutoNaoEncontrado{};
   }
 }
