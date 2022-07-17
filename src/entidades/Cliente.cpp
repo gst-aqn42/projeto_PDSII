@@ -1,7 +1,8 @@
 #include "/home/ozymandias/C++/projeto_PDSII/include/Cliente.hpp"
 
-void Cliente::cadastrar_novo_cliente(std::string CPF){
+Cliente::Cliente(std::string CPF, std::string endereco){
     _CPF = CPF;
+    _endereco = endereco;
     std::cout << "Cliente cadastrado com sucesso." << std::endl;
 }
 
@@ -17,6 +18,11 @@ std::string Cliente::get_CPF(){
     return _CPF;
 }
 
+std::string Cliente::get_endereco(){
+    return _endereco;
+}
+
 std::list<listaDeCompra>* Cliente::lista_compras(){
  return &_compra;
 }
+

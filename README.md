@@ -17,7 +17,7 @@ Com o objetivo de ter mais controle de sua mercearia o Doc seguiu a dica da Wane
 
 #### Quadro de funcionários:
 
-- Drew: Gerente
+- Drew: Caixa
 - Chris: Caixa
 - Doc/Stacey: Gerente
 - Tonya: Repositora

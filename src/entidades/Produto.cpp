@@ -1,4 +1,4 @@
-#include "Produto.hpp"
+#include "/home/ozymandias/C++/projeto_PDSII/include/Produto.hpp"
 
 int Produto::codigo_do_produto = 1;
 Produto::Produto(descricao desc_prod,double preco_un, dadosLote dados_prod){
@@ -8,6 +8,9 @@ Produto::Produto(descricao desc_prod,double preco_un, dadosLote dados_prod){
 
   _cod_prod = codigo_do_produto; 
   codigo_do_produto++;
+}
+
+Produto::Produto(){
 }
 
 void Produto::reset_preco(double novo_preco){
@@ -39,7 +42,7 @@ double Produto::get_preco() const{
 }
 
 void Produto::print_dados() const{
-  std::cout << _cod_prod << " " <<_desc_prod._nome << " " <<_desc_prod._marca << " " << _desc_prod._volume << " " << _preco_un << " " << std::endl;
+  std::cout << _cod_prod << " " <<_desc_prod._nome << " " <<_desc_prod._marca << " " << _desc_prod._volume << " " << _preco_un << "R$ ";
 }
 
 int Produto::get_cod_prod() const{

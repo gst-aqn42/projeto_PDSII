@@ -10,11 +10,12 @@ struct listaDeCompra{
 
 class Cliente{
 private:
-  std::list<listaDeCompra> _compra; std::string _CPF;
+  std::list<listaDeCompra> _compra; std::string _CPF; std::string _endereco;
 public:
-  void cadastrar_novo_cliente(std::string CPF);
+  Cliente(std::string CPF, std::string endereco);
   void adicionar_produto_na_lista(Produto& adc, int qtd); //std::list<listaDeCompra> &compra
   std::string get_CPF();
+  std::string get_endereco();
   std::list<listaDeCompra>* lista_compras();
 };
 #endif

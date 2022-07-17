@@ -1,51 +1,85 @@
 #include "/home/ozymandias/C++/projeto_PDSII/include/Repositor.hpp"
 
+Repositor::Repositor(){}
 
-void Repositor::adicionar_novo_produto(Estoque &est, Produto &produto){
+Repositor::~Repositor(){}
+
+void Repositor::adicionar_novo_produto(Produto produto){
   try{
-    est.adicionar_estoque(produto);
-    system("clear");
+    int clear = 2;
+    _estoquePrincipal.adicionar_estoque(produto);
     std::cout<< "O produto foi adicionado no estoque." << std::endl;
+    std::cout<< "Digite 1 para limpar a tela ou digite qualquer outro valor para voltar a página de funções" << std::endl;
+    std::cin >> clear;
+    if (clear == 1){
+      system("clear");
+    }
   }
   catch(ExceptionProdutoRepetido e){
-    system("clear");
+    int clear = 2;
     std::cout<< "O produto estava repetido, sua quantidade foi incrementada no estoque." << std::endl;
+    std::cout<< "Digite 1 para limpar a tela ou digite qualquer outro valor para voltar a página de funções" << std::endl;
+    std::cin >> clear;
+    if (clear == 1){
+      system("clear");
+    }
   }
   //Chama a main do repositor
 }
 
-void Repositor::alterar_preco(Estoque &est, int cod_prod, double preco){ // Altera o preço do produto de código informado, caso esteja no sistema
+void Repositor::alterar_preco(int cod_prod, double preco){ // Altera o preço do produto de código informado, caso esteja no sistema
   try{
-    est.alterar_preco(cod_prod, preco);
-    system("clear");
+    _estoquePrincipal.alterar_preco(cod_prod, preco);
+    int clear = 2;
     std::cout<< "O preço do produto foi alterado." << std::endl;
+    std::cout<< "Digite 1 para limpar a tela ou digite qualquer outro valor para voltar a página de funções" << std::endl;
+    std::cin >> clear;
+    if (clear == 1){
+      system("clear");
+    }
   }
   catch(ExceptionProdutoNaoEncontrado e){
-    system("clear");
+    int clear = 2;
     std::cout<< "O produto informado não se encontra no estoque." << std::endl;
+    std::cout<< "Digite 1 para limpar a tela ou digite qualquer outro valor para voltar a página de funções" << std::endl;
+    std::cin >> clear;
+    if (clear == 1){
+      system("clear");
+    }
   }
   //Chama a main do repositor
 }
 
-void Repositor::lotes_vencidos(Estoque &est, std::string data_atual){ // Lista todos os lotes dos produtos vencidos
+void Repositor::lotes_vencidos(std::string data_atual){ // Lista todos os lotes dos produtos vencidos
   try{
     system("clear");
-    est.verificar_vencidos(data_atual);
+    _estoquePrincipal.verificar_vencidos(data_atual);
   }
   catch(ExceptionSemVencidos e){
+    int clear = 2;
     std::cout << "Não existem produtos vencidos no estoque." << std::endl;
+    std::cout<< "Digite 1 para limpar a tela ou digite qualquer outro valor para voltar a página de funções" << std::endl;
+    std::cin >> clear;
+    if (clear == 1){
+      system("clear");
+    }
   }
   //Chama a main do repositor
 }
 
-void Repositor::remover_vencidos(Estoque &est, std::string lote){
+void Repositor::remover_vencidos(std::string lote){
   try{
-    system("clear");
-    est.remover_produto_do_estoque(lote);
+    _estoquePrincipal.remover_produto_do_estoque(lote);
   }
   catch(ExceptionProdutoNaoEncontrado e){
     system("clear");
     std::cout<< "O produto informado não se encontra no estoque." << std::endl;
+  }
+  int clear = 2;
+  std::cout<< "Digite 1 para limpar a tela ou digite qualquer outro valor para voltar a página de funções" << std::endl;
+  std::cin >> clear;
+  if (clear == 1){
+    system("clear");
   }
   //Chama a main do repositor
 }
@@ -58,14 +92,14 @@ void Repositor::alterar_senha(std::string senha_acesso){
       std::cin >> nova_senha;
       _senha_acesso = nova_senha;
     }else{
-      throw ExceptionSenhaIncorreta{};
+      throw ExceptionSenhaIncorreta {};
     } 
   }
   catch(ExceptionSenhaIncorreta e){
     std::string nova_acao;
-    std::cout << "Senha Incorreta, tente novamente ou caso tenha esquecido digite zero (1) para sair e se dirija a gerencia." << std::endl;
+    std::cout << "Senha Incorreta, tente novamente ou caso tenha esquecido digite zero (0) para sair e se dirija a gerencia." << std::endl;
     std::cin >> nova_acao;    
-    if (nova_acao == "1"){
+    if (nova_acao == "0"){
       system("clear");
     }else{
       alterar_senha(nova_acao);
@@ -74,7 +108,16 @@ void Repositor::alterar_senha(std::string senha_acesso){
   }
 }
 
-double Repositor::calcular_salario(double salario_base){
-  _salario = salario_base;
-  return _salario;
+void Repositor::calcular_salario(std::string dia){//Entre apenas com o dia do mês
+  if (dia == "30"){
+    double salarioBase = 0;
+    std::cout << "Digite o valor do salário base (R$): ";
+    std::cin >> salarioBase;
+    _salario = salarioBase + salarioBase/100;
+  }
 }
+
+Estoque Repositor::referencia_estoque(){
+  return _estoquePrincipal;
+}
+

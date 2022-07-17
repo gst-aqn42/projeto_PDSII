@@ -97,6 +97,14 @@ void Estoque::alterar_preco(int cod_prod, double novo_preco){
   if ((*aux).second.get_cod_prod() == cod_prod){
     (*aux).second.reset_preco(novo_preco);
   }else{
-    throw ExceptionProdutoNaoEncontrado{};
+    throw ExceptionProdutoNaoEncontrado {};
   }
+}
+
+Produto Estoque::retorna_produto(int codProd){
+  std::map<int, Produto>::iterator aux = _estoque.find(codProd);
+  if ((*aux).second.get_cod_prod() == codProd){
+    return aux->second;
+  }
+  throw ExceptionProdutoNaoEncontrado{};
 }

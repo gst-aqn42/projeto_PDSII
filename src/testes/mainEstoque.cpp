@@ -1,5 +1,5 @@
-#include "Estoque.hpp"
-#include "Produto.hpp"
+#include "/home/ozymandias/C++/projeto_PDSII/include/Estoque.hpp"
+#include "/home/ozymandias/C++/projeto_PDSII/include/Produto.hpp"
 //Todas as possibilidades testadas passam 
 int main(){ 
     descricao desc;

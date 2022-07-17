@@ -1,0 +1,31 @@
+CC=g++
+CFLAGS=-std=c++11 -Wall
+TARGET= teste_unidade_estoque
+
+DOCTEST_DIR = /home/ozymandias/C++/projeto_PDSII/doctest-master/doctest/
+BUILDLOGIN_DIR = /home/ozymandias/C++/projeto_PDSII/build/folhaLogin/
+BUILDMAINUSR_DIR = /home/ozymandias/C++/projeto_PDSII/build/mainUsuario/
+BUILDENTIDADES_DIR = /home/ozymandias/C++/projeto_PDSII/build/entidades/
+BUILDTESTES_DIR = /home/ozymandias/C++/projeto_PDSII/build/testes/
+SRC_DIR = /home/ozymandias/C++/projeto_PDSII/src/
+INCLUDE_DIR = /home/ozymandias/C++/projeto_PDSII/include/
+ROOT_DIR = /home/ozymandias/C++/projeto_PDSII/
+BIN_DIR = /home/ozymandias/C++/projeto_PDSII/bin/
+
+#vpl_execution
+
+${BUILDTESTES_DIR}/${TARGET} : ${BUILDENTIDADES_DIR}/Produto.o ${BUILDENTIDADES_DIR}/Estoque.o ${BUILDENTIDADES_DIR}mainEstoque.o 
+	${CC} ${CFLAGS} -o ${ROOT_DIR}/${TARGET} ${BUILDENTIDADES_DIR}/*.o
+
+${BUILDENTIDADES_DIR}/Produto.o : ${INCLUDE_DIR}/Produto.hpp ${SRC_DIR}/entidades/Produto.cpp
+	${CC} ${CFLAGS} -I ${INCLUDE_DIR}/ -c ${SRC_DIR}/entidades/Produto.cpp -o ${BUILDENTIDADES_DIR}/Produto.o
+
+${BUILDENTIDADES_DIR}/Estoque.o : ${INCLUDE_DIR}/Estoque.hpp ${SRC_DIR}/entidades/Estoque.cpp
+	${CC} ${CFLAGS} -I ${INCLUDE_DIR}/ -c ${SRC_DIR}/entidades/Estoque.cpp -o ${BUILDENTIDADES_DIR}/Estoque.o
+
+${BUILDENTIDADES_DIR}mainEstoque.o : ${INCLUDE_DIR}/Produto.hpp ${INCLUDE_DIR}/Estoque.hpp ${SRC_DIR}/testes/mainEstoque.cpp
+	${CC} ${CFLAGS} -I ${INCLUDE_DIR}/ -c ${SRC_DIR}/testes/mainEstoque.cpp -o ${BUILDENTIDADES_DIR}mainEstoque.o
+
+#use 'make clean' para usar a função de limpeza
+clean: 
+	rm -f ${BUILD_DIR}/*

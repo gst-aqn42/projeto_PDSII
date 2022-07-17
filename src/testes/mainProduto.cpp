@@ -1,6 +1,6 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN  
-#include "doctest-master/doctest/doctest.h"
-#include "Produto.hpp"
+#include "/home/ozymandias/C++/projeto_PDSII/doctest-master/doctest/doctest.h"
+#include "/home/ozymandias/C++/projeto_PDSII/include/Produto.hpp"
 
 TEST_CASE("Testando o Produto 1"){ 
     descricao desc;
