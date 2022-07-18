@@ -11,7 +11,7 @@ class Funcionario{
     static int _codigo_funcionario;
   public:
     virtual ~Funcionario() = default;
-    virtual Funcionario* cadastrar_funcionario(std::string nome, std::string funcao, std::string login, std::string senha_acesso);
+    virtual void cadastrar_funcionario(std::string nome, std::string funcao, std::string login, std::string senha_acesso);
     virtual void calcular_salario(std::string dia) = 0;
     void set_codigo_funcionario();
     void set_nome(std::string nome);
@@ -24,6 +24,8 @@ class Funcionario{
     double get_salario();
     std::string get_login();
     std::string get_senha();
+    void set_cod_fun_bd(int i); //metodo auxiliar para inicializar o codigo de funcionario a partir do carregamento do banco de daods em .csv
+    void set_salario(double sal);
 };
 
 #endif

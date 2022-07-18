@@ -3,8 +3,8 @@
 int Funcionario::_codigo_funcionario = 1;
 double Funcionario::_salario = 0;
 
-Funcionario* Funcionario::cadastrar_funcionario(std::string nome, std::string funcao, std::string login, std::string senha_acesso){
-return nullptr;
+void Funcionario::cadastrar_funcionario(std::string nome, std::string funcao, std::string login, std::string senha_acesso){
+
 }
 
 void Funcionario::set_codigo_funcionario(){
@@ -50,4 +50,9 @@ std::string Funcionario::get_login(){
 
 std::string Funcionario::get_senha(){
   return _senha_acesso;
+}
+
+
+void Funcionario::set_salario(double sal){
+  _salario = sal;
 }

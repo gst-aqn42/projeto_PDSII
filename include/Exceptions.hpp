@@ -6,5 +6,6 @@ class ExceptionProdutoRepetido{};
 class ExceptionSemVencidos{};
 class ExceptionDadoInvalido{};
 class ExceptionSenhaIncorreta{};
+class ExceptionLogOff{};
 
 #endif

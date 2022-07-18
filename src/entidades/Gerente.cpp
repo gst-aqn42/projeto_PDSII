@@ -16,7 +16,7 @@ Gerente::~Gerente(){
   //(Voltar Aqui)grava os dados em .csv e depois desaloca os ponteiros da pilha.
 }
 
-Funcionario* Gerente::cadastrar_funcionario(std::string nome, std::string funcao, std::string login, std::string senha){
+void Gerente::cadastrar_funcionario(std::string nome, std::string funcao, std::string login, std::string senha){
   if (funcao == "caixa"){
     Caixa* novoCaixa = new Caixa;
     novoCaixa->set_codigo_funcionario();
@@ -27,7 +27,6 @@ Funcionario* Gerente::cadastrar_funcionario(std::string nome, std::string funcao
 
     std::pair<int, Caixa*> aux(novoCaixa->get_codigo_funcionario(), novoCaixa);
     _caixa.insert(aux);
-    return novoCaixa;
   }else{
     if (funcao == "repositor"){
       Repositor* novoRepositor = new Repositor;
@@ -39,7 +38,6 @@ Funcionario* Gerente::cadastrar_funcionario(std::string nome, std::string funcao
 
       std::pair<int, Repositor*> aux(novoRepositor->get_codigo_funcionario(), novoRepositor);
       _repositor.insert(aux);
-      return novoRepositor;
     }else{
       if (funcao == "gerente")
       {
@@ -52,11 +50,9 @@ Funcionario* Gerente::cadastrar_funcionario(std::string nome, std::string funcao
         
         std::pair<int, Gerente*> aux(novoGerente->get_codigo_funcionario(), novoGerente);
         _gerente.insert(aux);
-        return novoGerente;
       }
     }
   }
-  return nullptr;
 }
 
 void Gerente::exibir_salario(std::string dia){
@@ -213,4 +209,77 @@ bool Gerente::verifica_map_gerente(){
 
 void Gerente::calcular_salario(std::string dia){
   
+}
+
+/*void Gerente::adicionar_funcionarios_do_banco(int codFuncionario, std::string nome, std::string funcao, double salario, std::string login, std::string senha){
+  if (funcao == "caixa"){
+    Caixa* aux;
+    aux->set_cod_fun_bd(codFuncionario); 
+    aux->set_nome(nome);
+    aux->set_funcao(funcao);
+    aux->set_salario(salario);
+    aux->set_login(login);
+    aux->set_senha(senha);
+
+    std::pair<int,Caixa*>insereBD(codFuncionario, aux);
+    _caixa.insert(insereBD);
+    _codigo_funcionario++;
+  }else{
+    if (funcao == "repositor"){
+      Repositor* aux;
+      aux->set_cod_fun_bd(codFuncionario); 
+      aux->set_nome(nome);
+      aux->set_funcao(funcao);
+      aux->set_salario(salario);
+      aux->set_login(login);
+      aux->set_senha(senha);
+
+      std::pair<int,Repositor*>insereBD(codFuncionario, aux);
+      _repositor.insert(insereBD);
+      _codigo_funcionario++;
+    }else{
+      if (funcao == "gerente"){
+        Gerente* aux;
+        aux->set_cod_fun_bd(codFuncionario); 
+        aux->set_nome(nome);
+        aux->set_funcao(funcao);
+        aux->set_salario(salario);
+        aux->set_login(login);
+        aux->set_senha(senha);
+
+        std::pair<int,Gerente*>insereBD(codFuncionario, aux);
+        _gerente.insert(insereBD);
+        _codigo_funcionario++;
+      }
+    }
+ }
+} */ //Parte do código auxiliar em .csv -> o segFault ocorreu por tentar implementar uma classe especializada através da classe pai
+//infelizmente não tenho mais tempo de consertar isso
+
+Caixa* Gerente::retorna_caixa(int i){
+  std::map<int, Caixa*>::iterator aux = _caixa.find(i);
+  if (aux->second->get_codigo_funcionario() == i){
+    return aux->second;
+  }
+  return nullptr;
+}
+
+Repositor* Gerente::retorna_repositor(int i){
+  std::map<int, Repositor*>::iterator aux = _repositor.find(i);
+  if (aux->second->get_codigo_funcionario() == i){
+    return aux->second;
+  }
+  return nullptr;
+}
+
+Gerente* Gerente::retorna_gerente(int i){
+  std::map<int, Gerente*>::iterator aux = _gerente.find(i);
+  if (aux->second->get_codigo_funcionario() == i){
+    return aux->second;
+  }
+  return nullptr;
+}
+
+void Gerente::balaco_do_estoque(){
+  _estoquePrincipal.imprimir_estoque();
 }
